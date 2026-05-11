@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunMall - Grilled Potato Chips</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                <path d="M12 4V2M12 22V20M4 12H2M22 12H20M5.5 5.5L4 4M18.5 18.5L20 20M5.5 18.5L4 20M18.5 5.5L20 4" stroke="#e74c3c" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#fca311"/>
+            </svg>
+            <span class="logo-text">SunMall</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CHIPS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="nav-right-pill">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search for chips...">
+            </div>
+            <div class="divider"></div>
+            <div class="cart-box">
+                <i class="fa-solid fa-shopping-bag"></i>
+                <span class="cart-badge">4</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Left Column -->
+        <div class="left-col">
+            <div class="badge">
+                <i class="fa-solid fa-star"></i> 100% REAL INGREDIENTS
+            </div>
+            <h1 class="main-heading">
+                EAT OUR <span class="highlight">GRILLED</span><br>
+                POTATO CHIPS
+            </h1>
+            <p class="subtext">
+                Satisfying savory Chinese meat sauce chips<br>
+                without any hard-to-find ingredients.
+            </p>
+            
+            <div class="actions">
+                <button class="add-to-cart-btn">
+                    <span class="btn-icon"><i class="fa-solid fa-shopping-basket"></i></span>
+                    <span class="btn-text">ADD TO CART</span>
+                </button>
+                <div class="quantity-selector">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">2</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon green"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="feature-text">
+                        <h4>100% NATURAL</h4>
+                        <p>No artificial flavors</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon orange"><i class="fa-solid fa-fire"></i></div>
+                    <div class="feature-text">
+                        <h4>OVEN GRILLED</h4>
+                        <p>Not fried</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon red"><i class="fa-solid fa-heart"></i></div>
+                    <div class="feature-text">
+                        <h4>TASTY & CRUNCHY</h4>
+                        <p>Irresistible bite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Image Column -->
+        <div class="center-col">
+            <div class="image-wrapper">
+                <div class="bg-circle"></div>
+                <!-- Main Bag Image -->
+                <img src="images/hero_chips.png" alt="Veggie Stix Chips" class="main-chip-image">
+                
+                <!-- Floating labels -->
+                <div class="floating-label crispy">
+                    CRISPY &
+                </div>
+                <div class="floating-label tasty">
+                    TASTY
+                </div>
+                
+                <!-- Decorations from the image -->
+                <div class="decor d1"></div>
+                <div class="decor d2"></div>
+                <div class="decor d3"></div>
+                <div class="decor d4"></div>
+                <div class="decor d5"></div>
+            </div>
+        </div>
+
+        <!-- Right Column (Flavours list) -->
+        <div class="right-col">
+            <div class="flavour-timeline">
+                <div class="flavour-list-item">
+                    <div class="flavour-icon green-bg"><i class="fa-solid fa-pepper-hot"></i></div>
+                    <div class="flavour-info">
+                        <h4>EXTRA CHILI</h4>
+                        <p>Zha jiang mian is crazy hot<br>even when it's simplified</p>
+                    </div>
+                </div>
+                <div class="flavour-list-item">
+                    <div class="flavour-icon red-bg"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23fff' d='M432 64h-32V32a16 16 0 0 0-16-16H128a16 16 0 0 0-16 16v32H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32v128H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32v96a16 16 0 0 0 16 16h256a16 16 0 0 0 16-16v-96h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-32V160h32a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16z'/></svg>" width="20" style="filter: brightness(0) invert(1);"></div>
+                    <div class="flavour-info">
+                        <h4>BEEF FLAVOUR</h4>
+                        <p>Comes with a lot extra energy<br>calories and Oxizen</p>
+                    </div>
+                </div>
+                <div class="flavour-list-item">
+                    <div class="flavour-icon yellow-bg"><i class="fa-solid fa-fire"></i></div>
+                    <div class="flavour-info">
+                        <h4>SMOKEY SAUCE</h4>
+                        <p>The meat sauce is kind of<br>reminiscent of a Chinese.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Section -->
+    <section class="bottom-section">
+        <div class="bottom-header">
+            <div class="bottom-title-area">
+                <h2>OUR TOP<br>FLAVOURS</h2>
+                <div class="title-dash"></div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="slider-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="product-cards">
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/hero_chips.png" alt="Veggie Stix">
+                    </div>
+                    <div class="card-content">
+                        <h4>BLACK BARBECUE</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="rating-num">(4.8)</span>
+                        </div>
+                        <div class="price">$12.30</div>
+                        <button class="order-btn">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/black_bbq.png" alt="Black Barbecue">
+                    </div>
+                    <div class="card-content">
+                        <h4>MR. POTATO</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="rating-num">(4.9)</span>
+                        </div>
+                        <div class="price">$15.89</div>
+                        <button class="order-btn">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/tom_yomm.png" alt="Tom Yomm">
+                    </div>
+                    <div class="card-content">
+                        <h4>TOM YOMM</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="rating-num">(4.7)</span>
+                        </div>
+                        <div class="price">$11.50</div>
+                        <button class="order-btn">ORDER NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
